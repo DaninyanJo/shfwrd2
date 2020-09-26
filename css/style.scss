@@ -62,7 +62,7 @@ body {
   align-items: center;
 }
 
-input[type="text"] {
+input[type="text"], input[type="password"] {
   text-transform: uppercase;
   font-family: "Russo One", sans-serif;
   outline: none;
@@ -164,6 +164,12 @@ li{
       touch-action: none;
   }
 }
+
+// .secret {
+//   input{
+    
+//   }
+// }
 
 @media screen and (max-width: 768px){
     body{

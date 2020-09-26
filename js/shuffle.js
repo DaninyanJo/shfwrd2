@@ -34,8 +34,10 @@ function shuffle(str) {
     }
     if (current_word ==  test_word.join('').toUpperCase()){
         document.querySelector('.shuffled-letters').classList.add('complete')   
-        
+        // inputText.classList.remove('secret')
+        inputText.type = 'text'
     } else{
         document.querySelector('.shuffled-letters').classList.remove('complete')
+        inputText.type = 'password'
     }
   }
