@@ -1,6 +1,3 @@
-import {requestURL,inputText,shuffleBtn,randomWord, output, score} from "./modules/variables"
-import {shuffle, cheker} from "./modules/shuffle"
-import {getPoints, addPoint,clearPoints} from "./modules/score"
 
 
 inputText.addEventListener("change", () => {
@@ -31,10 +28,3 @@ function sendRequest(method, url, str = null) {
   });
 }
 
-(function checkPoints() {
-  if (localStorage.getItem("user") == null) {
-    clearPoints();
-  } else {
-    getPoints();
-  }
-})()
