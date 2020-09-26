@@ -3,7 +3,13 @@ const requestURL =
   "https://raw.githubusercontent.com/RazorSh4rk/random-word-api/master/words.json";
 
 let el = document.querySelector(".shuffled-letters");
-let sortable = Sortable.create(el);
+let sortable = Sortable.create(el, {
+  onEnd: function (/**Event*/ evt) {
+    
+    console.log(123);
+  }
+});
+
 //------------
 let inputText = document.querySelector(".shuffle-word");
 let shuffleBtn = document.querySelector(".shuffle-btn");
