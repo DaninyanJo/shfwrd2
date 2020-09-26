@@ -22,6 +22,7 @@ function shuffle(str) {
         output.appendChild(li);
       });
     }
+    cheker()
   }
 
   function cheker() {
