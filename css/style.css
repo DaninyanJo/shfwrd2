@@ -211,6 +211,16 @@ li {
   font-family: 'Russo One', sans-serif;
 }
 
+.complete {
+  pointer-events: none;
+}
+
+.complete li {
+  background: #71d841;
+  -ms-touch-action: none;
+      touch-action: none;
+}
+
 @media screen and (max-width: 768px) {
   body {
     background: #dab71e;

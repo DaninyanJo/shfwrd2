@@ -157,6 +157,14 @@ li{
     font-family: 'Russo One', sans-serif;
 }
 
+.complete{
+  pointer-events: none;
+  li{
+      background: rgb(113, 216, 65);
+      touch-action: none;
+  }
+}
+
 @media screen and (max-width: 768px){
     body{
         background: rgb(218, 183, 30);
