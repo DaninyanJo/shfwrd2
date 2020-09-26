@@ -1,3 +1,8 @@
+import {requestURL,inputText,shuffleBtn,randomWord, output, score} from "./modules/variables"
+import {shuffle, cheker} from "./modules/shuffle"
+import {getPoints, addPoint,clearPoints} from "./modules/score"
+
+
 inputText.addEventListener("change", () => {
   if (inputText.value.length != 0) {
     inputText.classList.add("hasletter");
@@ -19,8 +24,17 @@ randomWord.addEventListener("click", () => {
     })
     .catch((err) => console.log(err));
 });
+
 function sendRequest(method, url, str = null) {
   return fetch(url).then((response) => {
     return response.json();
   });
 }
+
+(function checkPoints() {
+  if (localStorage.getItem("user") == null) {
+    clearPoints();
+  } else {
+    getPoints();
+  }
+})()
